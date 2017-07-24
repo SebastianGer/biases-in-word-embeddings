@@ -1,0 +1,10 @@
+sie,er
+frau,mann
+ihr,sein
+tochter,sohn
+mutter,vater
+oma,opa
+grossmutter,grossvater
+maedchen,junge
+weiblich,maennlich
+sie,ihn

@@ -1,0 +1,4 @@
+docker -H s876cnsm:2377 info
+
+nltk.download('stopwords')
+nltk.download('punkt')

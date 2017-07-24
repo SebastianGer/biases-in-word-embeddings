@@ -1,0 +1,19 @@
+skipgram,dimension,contextwindow,accuracy,topnaccuracy,time
+skipGram 0, size: 100, window 5, [49.825, 164.0], 30398.619926
+skipGram 0, size: 100, window 10, [49.599999999999994, 160.60000000000002], 33808.02758
+skipGram 0, size: 100, window 15, [48.45, 159.3], 30879.32945
+skipGram 0, size: 300, window 5, [52.25, 179.2], 48404.479919
+skipGram 0, size: 300, window 10, [51.225, 174.7], 50467.697034
+skipGram 0, size: 300, window 15, [51.099999999999994, 169.8], 49611.024036
+skipGram 0, size: 500, window 5, [51.8, 183.3], 67713.712228
+skipGram 0, size: 500, window 10, [50.375, 174.2], 63685.126489
+skipGram 0, size: 500, window 15, [49.925, 172.1], 63701.017868
+skipGram 1, size: 100, window 5, [56.85, 186.9], 78902.589091
+skipGram 1, size: 100, window 10, [55.574999999999996, 174.5], 107135.96589
+skipGram 1, size: 100, window 15, [54.349999999999994, 174.8], 123100.933384
+skipGram 1, size: 300, window 5, [59.7, 199.2], 129846.378407
+skipGram 1, size: 300, window 10, [58.199999999999996, 195.8], 178328.796244
+skipGram 1, size: 300, window 15, [57.650000000000006, 193.20000000000002], 203836.478844
+skipGram 1, size: 500, window 5, [59.575, 205.6], 179480.334022
+skipGram 1, size: 500, window 10, [58.074999999999996, 202.39999999999998], 249181.932857
+skipGram 1, size: 500, window 15, [58.125, 197.9], 283763.110101

@@ -1,0 +1,13 @@
+aerztin,arzt
+rechtsanwaeltin,rechtsanwalt
+professorin,professor
+ingenieurin,ingenieur
+informatikerin,informatiker
+pflegerin,pfleger
+metzgerin,metzger
+lehrerin,lehrer
+frisoerin,frisoer
+floristin,florist
+kindergaertnerin,kindergaertner
+kauffrau,kaufmann
+beraterin,berater
