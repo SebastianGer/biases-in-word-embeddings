@@ -115,8 +115,8 @@ def wefatScore(model, w, A, B):
 
 
 # return average s value of X and Y
-def averageAssociation(modelPath, testPath):
-        model = KeyedVectors.load_word2vec_format(modelPath)
+def averageAssociation(modelPath, testPath, binary = False):
+        model = KeyedVectors.load_word2vec_format(modelPath, binary = binary)
         with open(testPath, 'r') as f:
                 IAT = f.read().splitlines()
         X = IAT[0].split(' ')
