@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 # Script to preprocess corpora and write the result back to disk
 # Assumption: All input files consist of exactly one sentence per line, seperated by \n
-
+# Based on the preprocessing script of the GermanWordEmbeddings toolkit(https://github.com/devmount/GermanWordEmbeddings)
+#
 import nltk.data
 #from nltk.corpus import stopwords
 from multiprocessing import Pool
@@ -15,8 +16,7 @@ import sys
 
 logging.basicConfig(stream=sys.stdout, format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
-# Taken from GermanWordEmbeddings(https://github.com/devmount/GermanWordEmbeddings)
-#
+
 # function replaceUmlauts
 # ... replaces german umlauts and sharp s in given text
 # @param string  text
