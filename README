@@ -1,19 +1,21 @@
 The main experiments were run on a private data set. To allow replicability, we performed additional experiments on a public data set found at http://www.statmt.org/wmt17/translation-task.html
 
 
-Before executing any experiments, we must download and extract German News Crawl articles into data/raw/ by executing data/raw/downloadData.sh from within that directory. Then we must create permutations of the corpora by running src/preprocess/preshuffle.sh to be able to run the experiments testing the robustness of the WEAT towards permutation and subsampling.
+Before executing any experiments, we must download and extract German News Crawl articles into 'data/raw/' by executing 'data/raw/downloadData.sh' from within that directory. Next, we preprocess the data using 'src/preprocess/preprocessAll.sh', removing stop words, converting umlauts etc.. Then we create ten random permutations of the corpora by running 'src/preprocess/preshuffle.sh' so we don't have to shuffle the data every time we run a crossvalidated experiment.
 
-Experiments can be found in src/experiments/. Any experiments should be started with working directory set to the root directory of this project. 
+Experiments can be found in 'src/experiments/'. Any experiments should be started with working directory set to the root directory of this project. 
+
+To run the experiments mentioned in the paper, run 'src/experiments/robustnessToPermutation.py' and 'src/experiments/robustnessToSubsampling.py' after performing the preparation steps mentioned above.
 
 Folder structure:
 data
 -raw (raw data should be downloaded here)
 -processed (scripts place preprocessed data here)
 -external (any external data used for tests)
---iats (word lists )
----de (German WEAT)
----en (English WEAT used by Caliskan et al.)
----parallel (Tests for parallel comparison of psychological experiments and results computed on Calsikan et al.'s and our models)
+--iats (word lists, mostly procured from psychological IATs, used by us for the WEAT)
+---de (German word lists for WEAT)
+---en (English word lists used by Caliskan et al. in their WEAT)
+---parallel (Tests for parallel comparison of psychological experiments, results computed on Calsikan et al.'s and our models)
 
 src (contains source code)
 -train (code to train word embedding models)
@@ -21,16 +23,16 @@ src (contains source code)
 --glove
 -test (semantic/syntactic and bias tests)
 --GermanWordEmbeddings (code from https://github.com/devmount/GermanWordEmbeddings, we only use the syntactic/semantic tests)
--experiments 
+-experiments (code to run the experiments mentioned in thesis and paper)
 
 models (scripts save models in the respective subfolders)
 -glove
 -word2vec
 
-results (results of experiments are placed here)
+results (results of experiments are placed here by the scripts)
 -word2vec
 -glove
 
-paper (contains scripts and data to create the plots used in the paper)
+paper (contains scripts and data to create the plots used in thesis and paper)
 -data
 -plots
