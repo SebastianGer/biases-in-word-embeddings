@@ -1,13 +1,20 @@
-The main experiments were run on a private data set. To allow replicability, we performed additional experiments on a public data set found at http://www.statmt.org/wmt17/translation-task.html
+# Investigating a measure to detect societal biases in the word2vec model
+
+Experiments were performed on a public data set of news articles found at http://www.statmt.org/wmt17/translation-task.html
+
+This work is based on my bachelor thesis 'Examining societal biases in word vector models trained on German language corpora', therefore, some folders and files are included that are not relevant to the experiments in the paper. 
 
 
-Before executing any experiments, we must download and extract German News Crawl articles into 'data/raw/' by executing 'data/raw/downloadData.sh' from within that directory. Next, we preprocess the data using 'src/preprocess/preprocessAll.sh', removing stop words, converting umlauts etc.. Then we create ten random permutations of the corpora by running 'src/preprocess/preshuffle.sh' so we don't have to shuffle the data every time we run a crossvalidated experiment.
+## Preparation
+Before executing any experiments, we must download and extract German News Crawl articles into 'data/raw/' by executing 'data/raw/downloadData.sh' from within that directory. Next, we preprocess the data using 'src/preprocess/preprocessAll.sh', removing stop words, converting umlauts etc.. Then, we create ten random permutations of the corpora by running 'src/preprocess/preshuffle.sh' so we don't have to shuffle the data every time we run a crossvalidated experiment.
+
+## Experiments
 
 Experiments can be found in 'src/experiments/'. Any experiments should be started with working directory set to the root directory of this project. 
 
 To run the experiments mentioned in the paper, run 'src/experiments/robustnessToPermutation.py' and 'src/experiments/robustnessToSubsampling.py' after performing the preparation steps mentioned above.
 
-Folder structure:
+## Folder structure
 data
 -raw (raw data should be downloaded here)
 -processed (scripts place preprocessed data here)
